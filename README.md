@@ -22,5 +22,7 @@ Run `http://localhost:12001/swagger-ui.html#/`
 or http://api-springboot.mybluemix.net/swagger-ui.html on bluemix
 
 Swagger.json file: `http://localhost:12001/v2/api-docs?group=springboot`
+
+**Steps to integrate swagger with springboot:** http://stackoverflow.com/a/35907962/5076414
  
 Reference document for swagger integration: http://heidloff.net/article/usage-of-swagger-2-0-in-spring-boot-applications-to-document-apis/
