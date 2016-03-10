@@ -1,21 +1,23 @@
-# Netflix_Eureka_Client_HelloWorld
+# Java  SpringBoot REST API
 
-## Running on bluemix
-`cf push <app_name> -p target/helloworld-0.0.1-SNAPSHOT.war`
+## Build and run on localhost
+maven build with goals : `clean package`: generates target/helloworld2-0.0.1-SNAPSHOT.war
 
-Note the Eureka Server URL in application.yml file: serviceUrl: defaultZone: `http://eurekaregistry.mybluemix.net/eureka/`
-Change to right server or take it from an environment variable from bluemix
+Right click on HelloworldApplication.java in eclipse - Run as Java Application
 
-Go to Eureka server: `http://eurekaregistry.mybluemix.net` and verify that your service is registered there
+## How to execute the REST API
+- `http://localhost:12001/hello` : Generate plain text result: Hello World from Java_SpringBoot
+- `http://localhost:12001/operate/add/51/56` : Generate JSON object result: {"imeplementation": "Java_SpringBoot", "result": "107"}
 
-Run `<app_name>.mybluemix.net`
+## Running on IBM Bluemix
+`cf push api-springboot -p target/helloworld2-0.0.1-SNAPSHOT.war`
 
-## What does HelloWorld client do
+The REST API URL on Bleumix then becomes 
+- `http://api-springboot.mybluemix.net/hello`
+- `http://api-springboot.mybluemix.net/operate/add/51/56`
 
-It prints the instance IP and port of the Hellow World. somehting like Hello World: helloWorld6:169.45.162.108:61841
+## Swagger Integration
 
-## How to call this API from another API
+Run `http://localhost:12001/swagger-ui.html#/`
 
-If you have more than one instances , you can see load balancer in action when another micro service (consumer) calls this api and see the instance ip and port changed on subsequent refresh of consumer call of `<app_name>.mybluemix.net`
-
-Refer to https://github.com/sanketsw/Netflix_Eureka_Client_Consumer for more details on how to consume this API using feign client
+Swagger.json file: `http://localhost:12001/v2/api-docs?group=springboot`
