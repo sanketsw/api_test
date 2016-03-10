@@ -18,6 +18,7 @@ The REST API URL on Bleumix then becomes
 
 ## Swagger Integration
 
-Run `http://localhost:12001/swagger-ui.html#/`
+Run `http://localhost:12001/swagger-ui.html#/` 
+or http://api-springboot.mybluemix.net/swagger-ui.html on bluemix
 
 Swagger.json file: `http://localhost:12001/v2/api-docs?group=springboot`
