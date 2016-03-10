@@ -13,8 +13,8 @@ Right click on HelloworldApplication.java in eclipse - Run as Java Application
 `cf push api-springboot -p target/helloworld2-0.0.1-SNAPSHOT.war`
 
 The REST API URL on Bleumix then becomes 
-- `http://api-springboot.mybluemix.net/hello`
-- `http://api-springboot.mybluemix.net/operate/add/51/56`
+- http://api-springboot.mybluemix.net/hello
+- http://api-springboot.mybluemix.net/operate/add/51/56
 
 ## Swagger Integration
 
