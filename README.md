@@ -22,3 +22,6 @@ Run `http://localhost:12001/swagger-ui.html#/`
 or http://api-springboot.mybluemix.net/swagger-ui.html on bluemix
 
 Swagger.json file: `http://localhost:12001/v2/api-docs?group=springboot`
+
+### References
+http://heidloff.net/article/usage-of-swagger-2-0-in-spring-boot-applications-to-document-apis/
