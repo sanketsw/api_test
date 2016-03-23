@@ -16,7 +16,7 @@ Bluemix app: http://api-test-sanket.mybluemix.net
 
 ## How to write new testcase
 - Determine a label for your REST API e.g. getData
-- create two files -  getDate.properties and getData_output.JSON in src/test/resources/com/ibm/rest
+- create two files -  getData.properties and getData_output.JSON in src/test/resources/com/ibm/rest
 - Specify rest URL and expected output format in getDate.properties
 ```
     rest.url=http://api-springboot.mybluemix.net/operate/add/51/56
