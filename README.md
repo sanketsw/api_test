@@ -17,7 +17,7 @@ Bluemix app: http://api-test-sanket.mybluemix.net
 ## How to write new testcase
 - Determine a label for your REST API e.g. getData
 - create two files -  getData.properties and getData_output.JSON in src/test/resources/com/ibm/rest
-- Specify rest URL and expected output format in getDate.properties
+- Specify rest URL and expected output format in getData.properties
 ```
     rest.url=http://api-springboot.mybluemix.net/operate/add/51/56
     rest.produces=JSON
@@ -40,3 +40,15 @@ Bluemix app: http://api-test-sanket.mybluemix.net
 All you need to do is pass `getData` as an argument here. That will tell the test case where to read properties and output files from. Everything else is just copied and pasted. 
 
 - Done. Right click on the test case and run as Junit Test
+
+
+**For the REST API with Plain Text Output**
+
+- The ouptut file name will be *.txt:  `getData_output.txt` instead of *.json in src/test/resources/com/ibm/rest
+- rest.produces in getData.properties will be TXT or TEXT in stead of JSON
+```
+    rest.url=http://api-springboot.mybluemix.net/hello
+    rest.produces=TXT
+```
+- Paste the expected output Text in getData_output.txt as plain text
+`Hello World from Java_SpringBoot`
