@@ -2,13 +2,9 @@
 REST API Integration tests in Junit. Validates the expected output JSON file against the JSON reponse of the live REST API using jsonassert. Also tests the REST API that return plain text output.
 
 ## Build and run on localhost
-maven build with goals : `clean package`: generates target/api_test-0.0.1-SNAPSHOT.war
+maven build with goals : `clean package`: generates target/api_test-0.0.1-SNAPSHOT.war (Runs the Junit Test Cases as part of the build process)
 
 To run the test cases: right click on the test case and run as Junit Test Case
-
-## How to execute the REST API
-- `http://localhost:12001/hello` : Generate plain text result: Hello World from Java_SpringBoot
-- `http://localhost:12001/operate/add/51/56` : Generate JSON object result: {"imeplementation": "Java_SpringBoot", "result": "107"}
 
 ## Running on IBM Bluemix
 `cf push api-test-sanket -p target/api_test-0.0.1-SNAPSHOT.war`
