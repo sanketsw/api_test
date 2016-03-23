@@ -2,8 +2,7 @@ server:
   port: 12001
 spring:
   application:
-    name: helloWorld
+    name: API_Test
   cloud:
     services:
       registrationMethod: route    
-
